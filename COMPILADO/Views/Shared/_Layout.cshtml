@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Meu medico.com</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body style="background-image:url(../../img/3.jpg)">
+    <div class="navbar navbar-inverse" style="background-color:transparent !important; border: 0px;">
+        <div class="container">
+            <div class="navbar-header" style="margin-bottom:20px">
+            </div>
+
+            <div class="navbar-collapse collapse col-lg-offset-2" style="margin:-32px">
+                <lu><a class="letr" href="/">Inicio</a></lu>
+                <lu><a class="letr" href="~/meumedico/Index">Medicos</a></lu>
+                <lu><a class="letr" href="~/home/Consulta">Consulta</a></lu>
+                <lu><a class="letr" href="~/home/About">About</a></lu>  
+                <a href="~/Especialidades/Index">
+                    <img class="col-lg-offset-7" src="~/img/login.png" style="background-color:transparent" width="80" height="40" />
+                </a>
+                    </div>
+
+        </div>
+    </div>
+    <div class="container body-content">     
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year Meu medico.com</p>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
